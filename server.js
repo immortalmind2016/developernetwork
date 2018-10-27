@@ -24,7 +24,7 @@ mongoose.connect(db,{ useNewUrlParser: true }).then(()=>{
 }).catch((err)=>{
  console.log(err);
 })
-const publicPath=path.join(__dirname,"..","client","build")
+const publicPath=path.join(__dirname,"client","build")
 // Use Routes
 app.use("/api/users",users);
 app.use("/api/profile",profile);
